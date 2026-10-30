@@ -1,0 +1,72 @@
+[
+  {
+    "Name": "Erik",
+    "Age": 30,
+    "Membership": true
+  },
+  {
+    "Name": "Hasse",
+    "Age": 12,
+    "Membership": true
+  },
+  {
+    "Name": "Gunnar",
+    "Age": 18,
+    "Membership": true
+  },
+  {
+    "Name": "Laurs",
+    "Age": 40,
+    "Membership": true
+  },
+  {
+    "Name": "Dogge",
+    "Age": 50,
+    "Membership": false
+  },
+  {
+    "Name": "k",
+    "Age": 15,
+    "Membership": true
+  },
+  {
+    "Name": "hamster",
+    "Age": 15,
+    "Membership": true
+  },
+  {
+    "Name": "Lars",
+    "Age": 32,
+    "Membership": false
+  },
+  {
+    "Name": "test1",
+    "Age": 0,
+    "Membership": false
+  },
+  {
+    "Name": "test2",
+    "Age": 15,
+    "Membership": true
+  },
+  {
+    "Name": "David",
+    "Age": 20,
+    "Membership": true
+  },
+  {
+    "Name": "TEST3",
+    "Age": 18,
+    "Membership": true
+  },
+  {
+    "Name": "Test4",
+    "Age": 18,
+    "Membership": true
+  },
+  {
+    "Name": "Test5",
+    "Age": 18,
+    "Membership": false
+  }
+]

@@ -1,0 +1,16 @@
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\bin\Release\net10.0\Customers.json
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\bin\Release\net10.0\BikeRental.exe
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\bin\Release\net10.0\BikeRental.deps.json
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\bin\Release\net10.0\BikeRental.runtimeconfig.json
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\bin\Release\net10.0\BikeRental.dll
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\bin\Release\net10.0\BikeRental.pdb
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\obj\Release\net10.0\BikeRental.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\obj\Release\net10.0\BikeRental.AssemblyInfoInputs.cache
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\obj\Release\net10.0\BikeRental.AssemblyInfo.cs
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\obj\Release\net10.0\BikeRental.csproj.CoreCompileInputs.cache
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\obj\Release\net10.0\BikeRental.dll
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\obj\Release\net10.0\refint\BikeRental.dll
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\obj\Release\net10.0\BikeRental.pdb
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\obj\Release\net10.0\BikeRental.genruntimeconfig.cache
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\obj\Release\net10.0\ref\BikeRental.dll
+C:\Users\erikf\source\repos\Assignments\BikeRental\BikeRental\obj\Release\net10.0\BikeRental.csproj.Up2Date

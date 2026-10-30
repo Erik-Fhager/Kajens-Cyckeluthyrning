@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "Erik",
+    "Age": 30,
+    "Membership": true
+  },
+
+  {
+    "Name": "Hasse",
+    "Age": 12,
+    "Membership": true
+  },
+
+  {
+    "Name": "Gunnar",
+    "Age": 18,
+    "Membership": true
+  },
+
+  {
+    "Name": "Laurs",
+    "Age": 40,
+    "Membership": true
+  }
+
+]

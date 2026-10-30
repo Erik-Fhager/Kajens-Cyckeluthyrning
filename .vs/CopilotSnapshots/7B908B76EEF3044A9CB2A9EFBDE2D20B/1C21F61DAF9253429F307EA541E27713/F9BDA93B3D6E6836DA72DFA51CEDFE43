@@ -1,0 +1,106 @@
+﻿using BikeRental;
+using System.Text.Json;
+
+Rentalsystem system = new();
+
+bool running = true;
+string Jsonfile = File.ReadAllText("Customers.json");
+List<Customer> Customers = JsonSerializer.Deserialize<List<Customer>>(Jsonfile);
+while (running)
+{
+    Console.WriteLine();
+    Console.WriteLine("=== Kajens Cykeluthyrning ===");
+    Console.WriteLine("1. Visa fordon");
+    Console.WriteLine("2. Registrera kund");
+    Console.WriteLine("3. Hyr ut");
+    Console.WriteLine("4. Lämna tillbaka");
+    Console.WriteLine("5. Ladda");
+    Console.WriteLine("6. Avsluta");
+    Console.WriteLine("7 visa kunder");
+    Console.Write("Val: ");
+
+    int choice = int.Parse(Console.ReadLine());
+
+    if (choice == 1)    
+    { system.ShowBikes(); }
+
+    else if (choice == 2)
+    {
+        Console.WriteLine("Namn:");
+        string? Name = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(Name))
+        {
+            Console.WriteLine("Namnet får inte vara tomt.");
+            return;
+        }
+
+        Console.WriteLine("Ålder:");
+        if (!int.TryParse(Console.ReadLine(), out int Age))
+        {
+            Console.WriteLine("Ogiltig ålder. Försök igen.");
+            return;
+        }
+        else if (Age < 15)
+        {
+            Console.WriteLine("Du får inte hyra en cykel om du är under 15 år.");
+            return;
+        }
+
+        Console.WriteLine("Medlemskap (ja/nej):");
+        string? answer = Console.ReadLine()?.Trim().ToLower();
+
+        bool Membership;
+
+        if (answer == "ja")
+        {
+            Membership = true;
+        }
+        else if (answer == "nej")
+        {
+            Membership = false;
+        }
+        else
+        {
+            Console.WriteLine("Ogiltigt svar. Svara ja eller nej.");
+            return;
+        }
+
+        var customer = new Customer(Name, Age, Membership);
+        Customers.Add(customer);
+
+        static void SaveJson(List<Customer> customersToSave)
+        {
+            string jsonText = JsonSerializer.Serialize(customersToSave, new JsonSerializerOptions
+            {
+                WriteIndented = true
+            });
+            File.WriteAllText("Customers.json", jsonText);
+        }
+        Console.WriteLine($"Kund {Name} registrerad och sparad.");
+    }
+
+    //else if (choice == 3)
+    //{ system.RentBike(); }
+
+    //else if (choice == 4)
+    //{ system.ReturnBike(); }
+
+    //else if (choice == 5)
+    //{ system.Charge(); }
+
+    //else if (choice == 6)
+    //{ running = false; Console.WriteLine("Tack för besöket!"); }
+
+    else if (choice == 7)
+    {
+        Console.WriteLine("=== Registrerade kunder ===");
+        foreach (var customer in Customers)
+        {
+            string membershipStatus = customer.Membership ? "Ja" : "Nej";
+            Console.WriteLine($"Namn: {customer.Name}, Ålder: {customer.Age}, Medlemskap: {membershipStatus}");
+        }
+    }
+    //else
+    //{ Console.WriteLine("Ogiltigt val. Försök igen."); }
+}
